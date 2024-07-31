@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Hỗ Trợ Mạng Máy Tính</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/Main.css">
+    <link rel="stylesheet" href="/assets/css/Base.css">
+    <link rel="stylesheet" href="/assets/css/Question.css">
+    <link rel="stylesheet" href="/assets/css/Exam.css">
+    <link rel="stylesheet" href="/assets/css/Game.css">
+    <link rel="stylesheet" href="/assets/css/LoginRegister.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/validitor.js">
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- chỉnh sửa header: 
+- thêm mục đăng nhập / đăng ký/ tài khoản;
+- thêm các icon vào các mục. trang chủ -> icon ngôi nhà; tài liệu ->icon kinh lúp;
+-kỳ thi ->icon sách;game ->icon tay cầm;liên hệ ->icon phone;đăng ký đăng nhâp -> icon user;
+- -->
+        <h1 class="headerTittle">Website Hỗ Trợ Mạng Máy Tính</h1>
+        <div class="headerList">
+            <ul class="headerList">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#" id="itemFocus">Tài liệu</a></li>
+                <li><a href="#">Kỳ thi</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Đăng nhập/Đăng ký</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- code question -->
+    <div class="container" id="question">
+        <div class="question">
+            <div class="searchBlock">
+                <div class="searchBlock__searchBar">
+                    <div class="searchBlock__searchBar__inputText">
+                        <label for="query" class="inputText__label">Nhập câu hỏi cần tìm:</label>
+                        <input type="text" class="inputText__input" placeholder="VD: TCP/IP là gì" name="query"
+                            id="query">
+                        <div class="inputText__icon">
+                            <a href="#" class="inputText__icon-link">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="searchBlock__contentAnswer">
+                    <div class="searchBlock__contentanswer__item">
+                        <h1 class="contentanswer__heading">TCP/IP là viết tắt của "Transmission Control
+                            Protocol/Internet Protocol" (Giao thức Điều
+                            khiển Truyền dẫn/Giao thức Liên mạng).</h1>
+                        <p class="contentanswer__text"> Đây là bộ giao thức được sử dụng cho việc truyền tải
+                            dữ liệu qua mạng internet và nhiều mạng máy tính khác. TCP/IP định nghĩa cách dữ liệu được
+                            chia nhỏ thành các gói, được gửi đi và được lắp ráp lại tại đích. Nó bao gồm nhiều giao thức
+                            và được chia thành bốn tầng chính, mỗi tầng có vai trò và chức năng riêng biệt.</p>
+                    </div>
+                    <div class="searchBlock__contentanswer__item">
+                        <h1 class="contentanswer__heading">Các Tầng của TCP/IP:</h1>
+                        <p class="contentanswer__text">
+                            Tầng Liên Kết Dữ Liệu (Link Layer):
+                            Còn được gọi là tầng Mạng Vật Lý.
+                            Xử lý việc truyền dữ liệu giữa các thiết bị trong cùng một mạng vật lý.
+                            Bao gồm các giao thức như Ethernet, Wi-Fi.
+                        </p>
+                        <p class="contentanswer__text">Tầng Mạng (Internet Layer):
+                            Xử lý việc định tuyến các gói dữ liệu qua các mạng khác nhau.
+                            Giao thức chính là IP (Internet Protocol).
+                            IP định nghĩa địa chỉ IP, giúp định vị các thiết bị trong mạng.
+                            Bao gồm IPv4 và IPv6.</p>
+                        <p class="contentanswer__text">Tầng Giao Vận (Transport Layer):
+                            Đảm bảo truyền dữ liệu giữa các máy chủ.
+                            Giao thức chính là TCP (Transmission Control Protocol) và UDP (User Datagram Protocol).
+                            TCP cung cấp kết nối đáng tin cậy, kiểm soát luồng dữ liệu và đảm bảo dữ liệu được truyền
+                            đến đích đầy đủ và theo đúng thứ tự.
+                            UDP nhanh hơn nhưng không đảm bảo tính toàn vẹn của dữ liệu, thích hợp cho các ứng dụng yêu
+                            cầu tốc độ cao như truyền tải video, trò chơi trực tuyến.</p>
+                        <p class="contentanswer__text">Tầng Ứng Dụng (Application Layer):
+                            Chứa các giao thức hỗ trợ các ứng dụng mạng.
+                            Các giao thức phổ biến bao gồm HTTP (Hypertext Transfer Protocol), FTP (File Transfer
+                            Protocol), SMTP (Simple Mail Transfer Protocol), DNS (Domain Name System).</p>
+                    </div>
+                    <div class="searchBlock__contentanswer__item">
+                        <h1 class="contentanswer__heading">Chức Năng của TCP/IP:</h1>
+                        <p class="contentanswer__text">
+                            IP (Internet Protocol):
+                            Định địa chỉ IP cho các thiết bị trong mạng.
+                            Định tuyến các gói dữ liệu qua mạng từ nguồn đến đích.
+                        </p>
+                        <p class="contentanswer__text">TCP (Transmission Control Protocol):
+                            Đảm bảo truyền dữ liệu một cách tin cậy.
+                            Kiểm soát luồng dữ liệu và quản lý việc thiết lập và đóng kết nối.
+                            Đảm bảo dữ liệu đến đích đầy đủ và theo đúng thứ tự.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsestBlock">
+                <div class="newsestAnswer">
+                    <h2 class="newsest__heading">Các Câu Hỏi Mới Nhất</h2>
+                    <div class="newsest__listitem">
+                        <div class="newsest__item">
+                            <a href="#">Làm thế nào để cài đặt mạng LAN?</a>
+                            <div class="newsest__item__underlined"></div>
+                        </div>
+                        <div class="newsest__item">
+                            <a href="#">Cách khắc phục lỗi kết nối internet?</a>
+                            <div class="newsest__item__underlined"></div>
+                        </div>
+                        <div class="newsest__item">
+                            <a href="#">Tìm hiểu về giao thức TCP/IP.</a>
+                            <div class="newsest__item__underlined"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- code exam -->
+    <div class="container" id="exam">
+        <div class="exam">
+            <div class="exam__list">
+                <div class="exam__list__content">
+                    <div class="exam__list__tittle">
+                        <h1>Danh sách đề thi</h1>
+                    </div>
+                    <div class="exam__list__container">
+                        <div class="exam__list__item" id="examFocus">
+                            <div class="item__number">
+                                <a href="">Đề 1</a>
+                            </div>
+                            <div class="item__number__desc">
+                                <p class="">Đề thi này nhằm kiểm tra kiến thức và kỹ năng của thí sinh về các khía
+                                    cạnh
+                                    cơ
+                                    bản và nâng cao của mạng máy tính. Thông qua các câu hỏi lý thuyết và thực hành,
+                                    đề
+                                    thi
+                                    đánh giá khả năng hiểu biết, phân tích và giải quyết các vấn đề liên quan đến
+                                    mạng
+                                    máy
+                                    tính của thí sinh.</p>
+                            </div>
+                        </div>
+                        <div class="exam__list__item">
+                            <div class="item__number">
+                                <a href="">Đề 2</a>
+                            </div>
+                            <div class="item__number__desc">
+                                <p class="">Đề thi này nhằm kiểm tra kiến thức và kỹ năng của thí sinh về các khía
+                                    cạnh
+                                    cơ
+                                    bản và nâng cao của mạng máy tính. Thông qua các câu hỏi lý thuyết và thực hành,
+                                    đề
+                                    thi
+                                    đánh giá khả năng hiểu biết, phân tích và giải quyết các vấn đề liên quan đến
+                                    mạng
+                                    máy
+                                    tính của thí sinh.</p>
+                            </div>
+                        </div>
+                        <div class="exam__list__item">
+                            <div class="item__number">
+                                <a href="">Đề 3</a>
+                            </div>
+                            <div class="item__number__desc">
+                                <p class="">Đề thi này nhằm kiểm tra kiến thức và kỹ năng của thí sinh về các khía
+                                    cạnh
+                                    cơ
+                                    bản và nâng cao của mạng máy tính. Thông qua các câu hỏi lý thuyết và thực hành,
+                                    đề
+                                    thi
+                                    đánh giá khả năng hiểu biết, phân tích và giải quyết các vấn đề liên quan đến
+                                    mạng
+                                    máy
+                                    tính của thí sinh.</p>
+                            </div>
+                        </div>
+                        <div class="exam__list__item">
+                            <div class="item__number">
+                                <a href="">Đề 4</a>
+                            </div>
+                            <div class="item__number__desc">
+                                <p class="">Đề thi này nhằm kiểm tra kiến thức và kỹ năng của thí sinh về các khía
+                                    cạnh
+                                    cơ
+                                    bản và nâng cao của mạng máy tính. Thông qua các câu hỏi lý thuyết và thực hành,
+                                    đề
+                                    thi
+                                    đánh giá khả năng hiểu biết, phân tích và giải quyết các vấn đề liên quan đến
+                                    mạng
+                                    máy
+                                    tính của thí sinh.</p>
+                            </div>
+                        </div>
+                        <div class="exam__list__item">
+                            <div class="item__number">
+                                <a href="">Đề 5</a>
+                            </div>
+                            <div class="item__number__desc">
+                                <p class="">Đề thi này nhằm kiểm tra kiến thức và kỹ năng của thí sinh về các khía
+                                    cạnh
+                                    cơ
+                                    bản và nâng cao của mạng máy tính. Thông qua các câu hỏi lý thuyết và thực hành,
+                                    đề
+                                    thi
+                                    đánh giá khả năng hiểu biết, phân tích và giải quyết các vấn đề liên quan đến
+                                    mạng
+                                    máy
+                                    tính của thí sinh.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="History"><a href="">Lịch sử thi</a></button>
+            </div>
+
+            <div class="exam__contentBlock">
+                <div class="exam__contentBlock__heading">
+                    <h1>Đề số 1: </h1>
+                    <div class="heading__underlined"></div>
+                </div>
+                <div class="exam__contentBlock__set">
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 1:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question1" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question1" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question1" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question1" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 2:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question2" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question2" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question2" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question2" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 3:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question3" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question3" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question3" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question3" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 4:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question4" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question4" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question4" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question4" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 5:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question5" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question5" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question5" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question5" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam__contenBlock__setItem">
+                        <div class="setItem__topic">
+                            <div class="setItem__topic__number">
+                                <p>Câu số 6:</p>
+                            </div>
+                            <div class="setItem__topic__desc">
+                                <p>Giao thức nào sau đây được sử dụng để truyền tải các trang
+                                    web từ máy chủ web đến trình duyệt của người dùng?</p>
+                            </div>
+                        </div>
+                        <div class="setItem__choice">
+                            <div class="choice">
+                                <input type="radio" name="question6" value="A">
+                                <p>A. FTP (File Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question6" value="B">
+                                <p>B. SMTP (Simple Mail Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question6" value="C">
+                                <p>C. HTTP (HyperText Transfer Protocol)</p>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name="question6" value="D">
+                                <p>D. SSH (Secure Shell)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="exam__contentBlock__btn"> <a href="#">Nộp bài</a></button>
+            </div>
+            <div class="exam__numberList">
+                <div class="exam__numberList__time">
+                    <p class="time__title">Thời gian làm bài:</p>
+                    <p class="time__clock">00:01</p>
+                </div>
+                <div class="exam__numberList__mid">
+                    <div class="mid__item">
+                        <div class="mid__item__element">
+                            <p>1</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>2</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>3</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>4</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>5</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>6</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>7</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>8</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>9</p>
+                        </div>
+                        <div class="mid__item__element">
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="exam__numberList_btn">Nộp bài</button>
+            </div>
+        </div>
+    </div>
+    <!-- Code home -->
+    <div class="container" id="home">
+        <div class="greeting">
+            <h2>Chào Mừng Bạn Đến Với Website</h2>
+            <p>Đây là nơi bạn có thể tìm kiếm và đặt câu hỏi về các vấn đề liên quan đến mạng máy tính.</p>
+        </div>
+        <div class="intro">
+            <h3 class=""> Giới Thiệu Về Website Hỗ Trợ Mạng Máy Tính</h3>
+            <div class="containerTarget">
+                <div class="itemTarget introTarget">
+                    <h1 class="titleTarget">Mục Tiêu Hướng đến</h1>
+                    <p class="textTarget">Website Hỗ Trợ Mạng Máy Tính được tạo ra với mục tiêu cung cấp một nền
+                        tảng
+                        đáng
+                        tin cậy những ai quan tâm đến các vấn đề liên quan đến mạng máy tính. Chúng tôi cam kết giúp
+                        đỡ
+                        người dùng giải quyết các vấn đề kỹ thuật, nâng cao kiến thức và kỹ năng thông qua các tài
+                        liệu
+                        hướng dẫn chi tiết và các cuộc thảo luận sôi nổi.</p>
+                </div>
+                <div class=" itemTarget introUserTarget">
+                    <h1 class="titleTarget">Đối Tượng Người Dùng </h1>
+                    <p class="texttarget">Website của chúng tôi hướng tới mọi đối tượng, từ những người mới bắt đầu
+                        tìm
+                        hiểu về mạng máy tính
+                        cho đến các chuyên gia kỹ thuật. Bất kể bạn là sinh viên, nhân viên IT, hay người dùng thông
+                        thường,
+                        bạn đều có thể tìm thấy thông tin hữu ích và nhận được sự hỗ trợ cần thiết từ cộng đồng</p>
+                </div>
+            </div>
+
+            <div class="introFunction">
+                <h1 class="titleFunction">Chức Năng Chính</h1>
+                <div class="containerFunction">
+                    <div class="itemFunction">
+                        <h1 class="itemText">
+                            Tài Liệu Hướng Dẫn:
+                        </h1>
+                        <p>Cung cấp các bài viết, tài liệu học tập và hướng dẫn chi tiết về các
+                            khía cạnh khác nhau của mạng máy tính, từ cơ bản đến nâng cao.</p>
+                    </div>
+                    <div class="itemFunction">
+                        <h1 class="itemText">
+                            Câu Hỏi Thường Gặp :
+                        </h1>
+                        <p> Một bộ sưu tập các câu hỏi thường gặp và câu trả lời chi tiết,
+                            giúp người dùng nhanh chóng tìm ra giải pháp cho các vấn đề phổ biến.</p>
+                    </div>
+                    <div class="itemFunction">
+                        <h1 class="itemText">
+                            Diễn Đàn Thảo Luận:
+                        </h1>
+                        <p>Người dùng có thể đăng câu hỏi, trả lời và thảo luận về các chủ đề liên
+                            quan đến mạng máy tính. Đây là nơi giao lưu và chia sẻ kinh nghiệm giữa các thành viên.
+                        </p>
+                    </div>
+                    <div class="itemFunction">
+                        <h1 class="itemText">
+                            Hỗ Trợ Trực Tuyến:
+                        </h1>
+                        <p>Đội ngũ hỗ trợ chuyên nghiệp sẵn sàng giải đáp các thắc mắc và cung cấp
+                            tư vấn kỹ thuật cho người dùng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="introAdvantage">
+                <h1 class="titleAdvantage">Lợi ích khi tham gia</h1>
+                <div class="containerAdvantage">
+                    <div class="itemAdvantage">
+                        <h1>Cộng Đồng Năng Động:
+                        </h1>
+                        <p>Tham gia vào một cộng đồng lớn với nhiều thành viên năng động và giàu
+                            kinh nghiệm.</p>
+                    </div>
+                    <div class="itemAdvantage">
+                        <h1>Kiến Thức Chuyên Sâu:
+                        </h1>
+                        <p>Tiếp cận với các tài liệu học tập và hướng dẫn chi tiết, giúp bạn nâng
+                            cao kiến thức và kỹ năng.</p>
+                    </div>
+                    <div class="itemAdvantage">
+                        <h1>Giải Quyết Vấn Đề:
+                        </h1>
+                        Nhận được sự hỗ trợ nhanh chóng và hiệu quả từ cộng đồng và đội ngũ hỗ
+                        trợ của chúng tôi.
+                    </div>
+                    <div class="itemAdvantage">
+                        <h1>Cập Nhật Thông Tin:
+                        </h1>
+                        <p>Luôn cập nhật những xu hướng và công nghệ mới nhất trong lĩnh vực mạng
+                            máy tính.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newestAnswer">
+            <h2>Các Câu Hỏi Mới Nhất</h2>
+            <ul>
+                <li><a href="#">Làm thế nào để cài đặt mạng LAN?</a></li>
+                <li><a href="#">Cách khắc phục lỗi kết nối internet?</a></li>
+                <li><a href="#">Tìm hiểu về giao thức TCP/IP</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <div class="form__modal">
+        <div class="form__main--register" id="form__Register">
+            <form action="" method="POST" class="form__form" id="form-1">
+                <div class="form__heading">
+                    <div class="form__heading__buttonMain"><a href="" class="">Đăng ký</a></div>
+                    <div class="form__heading__tab"></div>
+                    <div class="form__heading__buttonSecond"><a href="">Đăng nhập</a></div>
+                </div>
+                <div class="spacer"></div>
+
+                <div class="form__group">
+                    <label for="fullname" class="form__label">Tên đầy đủ</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Văn Quyền"
+                        class="form__input">
+                    <span class="form__message"></span>
+                </div>
+                <div class="form__group">
+                    <label for="fullname" class="form__label">Nghề nghiệp</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: học sinh/sinh viên/giáo viên"
+                        class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email Đăng ký</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="password" class="form__label">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu"
+                        class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="password_confirmation" class="form__label">Nhập lại mật khẩu</label>
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                        type="password" class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <button class="form-submit">Đăng ký</button>
+            </form>
+        </div>
+        <div class="form__main--login" id="form__Login">
+            <form action="" method="POST" class="form__form" id="form-2">
+                <div class="form__heading">
+                    <div class="form__heading__buttonMain"><a href="" class="">Đăng nhập</a></div>
+                    <div class="form__heading__tab"></div>
+                    <div class="form__heading__buttonSecond"><a href="">Đăng ký</a></div>
+                </div>
+                <div class="spacer"></div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email Đăng nhập:</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="password" class="form__label">Mật khẩu:</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu"
+                        class="form__input">
+                    <span class="form__message"></span>
+                </div>
+
+                <button class="form-submit">Đăng Nhập</button>
+            </form>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <p>&copy; 2024 Website Hỗ Trợ Mạng Máy Tính. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+
+</html>
