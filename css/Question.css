@@ -1,0 +1,126 @@
+.question {
+    display: flex;
+}
+
+/* code searchBar */
+.searchBlock {
+    flex: 3.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBlock__searchBar {
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid var(--blackColor--);
+    border-radius: 10px;
+    background-color: var(--grayColor--);
+}
+
+.searchBlock__searchBar__inputText {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--blackColor--);
+    border-radius: 10px;
+    background-color: var(--whiteColor--);
+}
+
+.inputText__label {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.inputText__input {
+    flex: 5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.inputText__icon {
+    flex: 0.2;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 2px 0.2 0.4 #000;
+}
+
+.inputText__icon-link {
+    color: var(--mainColor--);
+    margin-left: 10px;
+}
+
+/* Code content of answer */
+
+.searchBlock__contentAnswer {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBlock__contentanswer__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--whiteColor--);
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--pinkColor--);
+    border-radius: 10px;
+}
+
+.contentanswer__heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.contentanswer__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 10px;
+}
+
+/* Code newesst Answer */
+.newsestBlock {
+    flex: 1;
+}
+
+.newsestAnswer {
+    background-color: var(--whiteColor--);
+    padding: 10px;
+    border: 2px solid var(--blackColor--);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.newsest__heading {
+    margin: 10px 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.newsest__listitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.newsest__item {
+    margin: 10px 30px;
+}
+
+.newsest__item a {
+    text-decoration: none;
+}
+
+.newsest__item__underlined {
+    width: 100%;
+    border: 1px solid var(--blackColor--);
+    margin-top: 10px;
+}
